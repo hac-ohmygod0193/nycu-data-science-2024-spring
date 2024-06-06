@@ -1,0 +1,52 @@
+• Prompt you use:
+example = """
+Topic:
+{task}
+
+QUESTION:
+{QUESTION}
+
+Options:
+{ANSWER_OPTIONS}
+
+Answer:{answer}
+"""
+
+And I fill the examples string above into prompt example_1,2,3,4,5
+
+prompt = """
+You are an expert on {task}.
+Answer the following questions about the {task}.
+Choose the best answer from the Options provided. Only one answer is correct.
+
+Here are five example pairs of question and answer about the {task}:
+<example>
+Ex1. 
+{example_1}
+Ex2. 
+{example_2}
+Ex3. 
+{example_3}
+Ex4. 
+{example_4}
+Ex5.
+{example_5}
+</example>
+
+QUESTION:
+{QUESTION}
+
+Options:
+
+{ANSWER_OPTIONS}
+
+"""
+• LLM you use:
+model_mapping = {
+    "0": "llama2-70b-4096", // acc = 0.652
+    "1": "mixtral-8x7b-32768", // acc = 0.804
+    "2": "gemma-7b-it", // acc = 0.550
+    "3": "gemini-pro", // acc = 0.843
+}
+• Your prompt strategy: 
+I use 5-shots and Interactive Storytelling and Role-Playing
