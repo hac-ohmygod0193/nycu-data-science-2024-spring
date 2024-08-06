@@ -9,3 +9,6 @@ This repository contains the homework assignments for the course. Below is a lis
 - HW4 Model Compression for LLM
 - HW5 Makeup Transfer
 - HW6 Semi-Supervised Semantic Segmentation
+
+## Useful Reference
+- https://github.com/jacksonchen1998/2023-NYCU-Data-Science
