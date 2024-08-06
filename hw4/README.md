@@ -8,3 +8,9 @@
     ```
     python3 score_result.py
     ```
+
+## Useful Resources
+- https://github.com/jongwooko/NASH-Pruning-Official/tree/master
+- https://pytorch.org/docs/stable/generated/torch.nn.utils.prune.ln_structured.html
+- Pruning Bert on Task MNLI — Neural Network Intelligence (nni.readthedocs.io)
+- https://www.infoq.cn/article/6mA1gDVFWU1oj1ZdQyD2
